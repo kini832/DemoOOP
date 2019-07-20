@@ -13,9 +13,9 @@ class Database{
     public function execute($sql){
         if(mysqli_query($this->con, $sql)){
             return 1;
-        }else{
+        }else
             return 0;
-        }
+        
     }
 
     public function __destruct(){
